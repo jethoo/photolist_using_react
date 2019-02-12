@@ -17,8 +17,8 @@ class PhotoList extends React.Component {
 			.then((response) => {
 				//console.log(response.data);
 				this.setState({
-					photos: response.data.slice(0,10), // got 5000 photos in reply from api of the above webpage.
-					visiblePhotos: response.data.slice(0,10)
+					photos: response.data.slice(0,12), // got 5000 photos in reply from api of the above webpage.
+					visiblePhotos: response.data.slice(0,12)
 				})									  			// only used initial 10 photos.
 			});
 	}
